@@ -1,16 +1,63 @@
-# React + Vite
+# ⚡ Workflow Builder Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive, node-based workflow editor built with **React.js**. This tool enables users to design, simulate, and export complex logic flows with a focus on seamless user experience and data persistence.
 
-Currently, two official plugins are available:
+## 🚀 Deployment & Source
+* **Live Demo:** [https://workflow-builder-lovat-five.vercel.app/](https://workflow-builder-lovat-five.vercel.app/)
+* **GitHub Repository:** [https://github.com/Reeti09/workflow-builder-pro](https://github.com/Reeti09/workflow-builder-pro)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. Interactive Canvas & Node Management
+* **Dynamic Creation**: Add **Action**, **Branch**, and **End** nodes via a context-sensitive floating menu.
+* **Logical Branching**: Configure "Toggle Switch" conditions to simulate "True/False" branching paths.
+* **Tree Repair**: Deleting a node automatically repairs the tree structure to maintain workflow integrity.
 
-## Expanding the ESLint configuration
+### 2. Real-Time Flow Simulation
+* **Path Tracing**: A visual simulation ball traverses the workflow, following logic set by the user.
+* **Visual Feedback**: Active paths are highlighted while inactive routes are dimmed during simulation.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 3. Data Persistence & Export
+* **Auto-Save**: Integrated `localStorage` engine saves the workflow state on every change to prevent data loss.
+* **JSON Export**: Download the entire hierarchical data structure as a portable JSON file.
+* **Visual Snapshot**: Optimized print-media queries allow for clean image/PDF exports, including a **Workflow Statistics** summary (Total Steps, Actions, and Branches).
+
+---
+
+## 🛠️ Technical Stack
+* **Frontend**: React.js (Hooks, Functional Components)
+* **State Management**: Custom `useWorkflow` hook for history (Undo/Redo) and tree manipulation.
+* **Styling**: CSS3 with Flexbox, Grid, and Print Media Queries for professional exports.
+* **Deployment**: Vercel (CI/CD via GitHub).
+
+---
+
+## 🏆 Bonus Points Implemented
+To demonstrate a higher level of skill, the following features were added:
+* **[✓] Undo/Redo System**: Full structural history tracking for adding/deleting nodes.
+* **[✓] Saving/Loading**: Persistent storage via `localStorage` and manual JSON export.
+* **[✓] Context-Sensitive UI**: A clean pop-over menu for adding specific node types.
+* **[✓] Advanced UX**: Sidebar hover tooltips and optimized vertical spacing for better scannability.
+
+---
+
+## 📥 Local Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone [https://github.com/Reeti09/workflow-builder-pro.git](https://github.com/Reeti09/workflow-builder-pro.git)
+## Install dependencies:
+
+```bash
+  npm install
+```
+    
+
+## Run Development Server:
+
+```bash
+  npm start
+```
+    
